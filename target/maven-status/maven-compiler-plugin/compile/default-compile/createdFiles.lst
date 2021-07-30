@@ -1,0 +1,6 @@
+br\com\muryllo\jmailer\Mailer.class
+br\com\muryllo\jmailer\Envelope.class
+br\com\muryllo\jmailer\MailerResponseData.class
+br\com\muryllo\jmailer\RequestService.class
+br\com\muryllo\jmailer\MailerResponse.class
+br\com\muryllo\jmailer\JsonService.class

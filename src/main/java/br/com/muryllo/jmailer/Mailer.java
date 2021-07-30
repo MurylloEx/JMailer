@@ -108,7 +108,7 @@ public class Mailer {
         .setHtmlBody(this.m_HtmlBody);
       
       String envelopeJson = JsonService.stringify(envelope, Envelope.class);
-      RequestBody reqBody = RequestBody.create(envelopeJson, JSON);
+      RequestBody reqBody = RequestBody.Companion.create(envelopeJson, JSON);
   
       Map<String, String> queryString = new Hashtable<String, String>();
       Map<String, String> headers = new Hashtable<String, String>();
@@ -120,7 +120,7 @@ public class Mailer {
         reqBody, 
         headers, 
         queryString);
-      
+
       return JsonService.parse(response, MailerResponse.class);
     } catch(Exception exception){
       return new MailerResponse();
