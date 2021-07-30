@@ -97,7 +97,7 @@ public class Mailer {
    * 
    * @return Retorna a resposta do servidor SMTP em formato JSON.
    */
-  public String send(){
+  public MailerResponse send(){
     try{
       Envelope envelope = new Envelope()
         .setApiKey(this.m_SecretKey)
@@ -112,15 +112,18 @@ public class Mailer {
   
       Map<String, String> queryString = new Hashtable<String, String>();
       Map<String, String> headers = new Hashtable<String, String>();
+      
       headers.put("Content-Type", "application/json; charset=utf-8");
     
-      return RequestService.post(
+      String response = RequestService.post(
         SMTP_API_URL + "/email/send", 
         reqBody, 
         headers, 
         queryString);
+      
+      return JsonService.parse(response, MailerResponse.class);
     } catch(Exception exception){
-      return null;
+      return new MailerResponse();
     }
   }
 

@@ -22,7 +22,7 @@ Adicione o seguinte trecho dentro da tag <dependencies> em seu arquivo pom.xml
 <dependency>
   <groupId>br.com.muryllo.jmailer</groupId>
   <artifactId>jmailer</artifactId>
-  <version>1.2-SNAPSHOT</version>
+  <version>1.2.2</version>
 </dependency>
 ```
 
@@ -36,8 +36,8 @@ Mailer mail = new Mailer()
   .to("Muryllo Pimenta", "muryllo.pimenta@upe.br")
   .htmlBody("<h1>Confirmação de cadastro</h1>");
 
-String result = mail.send();
-System.out.println(result);
+MailerResponse result = mail.send();
+System.out.println(result.success());
 ```
 
 ## Metadata

@@ -2,6 +2,11 @@ package br.com.muryllo.jmailer;
 
 import java.util.List;
 
+/**
+ * Essa classe está disponível para uso interno.
+ * Utilizá-la diretamente por sua própria conta pode trazer problemas. 
+ * Utilize a classe Mailer se quiser enviar os emails da forma mais adequada.
+ */
 public class Envelope {
   
   private String api_key;

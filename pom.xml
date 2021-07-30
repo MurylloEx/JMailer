@@ -3,15 +3,13 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-
   <groupId>br.com.muryllo.jmailer</groupId>
   <artifactId>jmailer</artifactId>
-  <version>1.2-SNAPSHOT</version>
+  <version>1.2.2</version>
   <packaging>jar</packaging>
 
   <name>jmailer</name>
   <description>Esta é uma biblioteca simples e pragmática para envio de e-mails em sistemas feitos sob Node.js usando JavaScript ou Typescript.</description>
-  <!-- FIXME change it to the project's website -->
   <url>https://github.com/MurylloEx/JMailer</url>
 
   <properties>
@@ -26,11 +24,13 @@
         <groupId>com.squareup.okhttp3</groupId>
         <artifactId>okhttp</artifactId>
         <version>4.9.0</version>
+        <scope>import</scope>
       </dependency>
       <dependency>
         <groupId>com.google.code.gson</groupId>
         <artifactId>gson</artifactId>
         <version>2.8.5</version>
+        <scope>import</scope>
       </dependency>
     </dependencies>
   </dependencyManagement>
@@ -40,11 +40,13 @@
       <groupId>com.squareup.okhttp3</groupId>
       <artifactId>okhttp</artifactId>
       <version>4.9.0</version>
+      <scope>import</scope>
     </dependency>
     <dependency>
       <groupId>com.google.code.gson</groupId>
       <artifactId>gson</artifactId>
       <version>2.8.5</version>
+      <scope>import</scope>
     </dependency>
   </dependencies>
 
