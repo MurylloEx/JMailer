@@ -26,6 +26,20 @@ Adicione o seguinte trecho dentro da tag <dependencies> em seu arquivo pom.xml
 </dependency>
 ```
 
+Utilize este trecho de código para enviar seus emails, mude-o como quiser e achar melhor.
+
+```java
+Mailer mail = new Mailer()
+  .key("<your-api-key>")
+  .subject("Teste de Email!")
+  .from("Teste", "teste@muryllo.com.br")
+  .to("Muryllo Pimenta", "muryllo.pimenta@upe.br")
+  .htmlBody("<h1>Confirmação de cadastro</h1>");
+
+String result = mail.send();
+System.out.println(result);
+```
+
 ## Metadata
 
 Muryllo Pimenta de Oliveira – muryllo.pimenta@upe.br
