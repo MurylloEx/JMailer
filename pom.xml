@@ -5,11 +5,11 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>br.com.muryllo.jmailer</groupId>
   <artifactId>jmailer</artifactId>
-  <version>1.2.2</version>
+  <version>1.2.3</version>
   <packaging>jar</packaging>
 
   <name>jmailer</name>
-  <description>Esta é uma biblioteca simples e pragmática para envio de e-mails em sistemas feitos sob Node.js usando JavaScript ou Typescript.</description>
+  <description>Esta é uma biblioteca simples e pragmática para envio de e-mails em sistemas feitos sob Java.</description>
   <url>https://github.com/MurylloEx/JMailer</url>
 
   <properties>
@@ -57,7 +57,7 @@
     </snapshotRepository>
     <repository>
       <id>ossrh</id>
-      <url>https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+      <url>https://s01.oss.sonatype.org/content/repositories/releases/</url>
     </repository>
   </distributionManagement>
 

@@ -22,7 +22,7 @@ Adicione o seguinte trecho dentro da tag <dependencies> em seu arquivo pom.xml
 <dependency>
   <groupId>br.com.muryllo.jmailer</groupId>
   <artifactId>jmailer</artifactId>
-  <version>1.2.2</version>
+  <version>1.2.3</version>
 </dependency>
 ```
 
